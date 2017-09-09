@@ -116,6 +116,7 @@
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="NetLayer.h" />
     <ClInclude Include="Neuron.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Agent.cpp" />
@@ -124,6 +125,7 @@
     <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="NetLayer.cpp" />
     <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

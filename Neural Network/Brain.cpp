@@ -1,5 +1,7 @@
 #include "Brain.h"
 #include "Neuron.h"
+#include <iostream>
+using namespace std;
 
 /*
 Creates a randomly generated brain, uses Multilevel perceptron.
@@ -32,8 +34,14 @@ Brain::Brain()
 
 	//Output Layer
 
-	Neuron* leftWheel = new Neuron();
-	Neuron* rightWheel = new Neuron();
+	Neuron* leftWheel = new Neuron(this->hiddenLayer->neuronCount());
+	Neuron* rightWheel = new Neuron(this->hiddenLayer->neuronCount());
+
+	vector<Neuron*> outNeurons;
+	outNeurons.push_back(leftWheel);
+	outNeurons.push_back(rightWheel);
+
+	this->outputLayer = new NetLayer(outNeurons);
 }
 
 vector<float> Brain::update(vector<float> input)
@@ -41,7 +49,8 @@ vector<float> Brain::update(vector<float> input)
 	//input layer is not used for now, we don't want signoid to be used.
 
 	vector<float> hiddenOut = hiddenLayer->update(input);
-	vector<float> out = outputLayer->update(input);
+	//cout << "hidden:" << hiddenOut.size() << endl;
+	vector<float> out = outputLayer->update(hiddenOut);
 
-	return vector<float>();
+	return out;
 }

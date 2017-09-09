@@ -36,6 +36,9 @@
     <ClInclude Include="Brain.h">
       <Filter>Header Files\Neural Network</Filter>
     </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Agent.cpp">
@@ -55,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="Brain.cpp">
       <Filter>Source Files\Neural Network</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

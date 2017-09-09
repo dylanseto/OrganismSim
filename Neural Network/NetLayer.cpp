@@ -1,5 +1,6 @@
 #include "NetLayer.h"
 #include "MathHelper.h"
+#include <iostream>
 
 NetLayer::NetLayer()
 {
@@ -21,15 +22,17 @@ vector<float> NetLayer::update(vector<float> input)
 
 		if (cur->getWeights().size() != input.size()) //Don't Match
 		{
+			cout << cur->getWeights().size() << endl;
+			cout << input.size() << endl;
 			return vector<float>();
 		}
 
-		for (int j = 0; j != cur->getWeights().size(); j++)
+		float act = 0;
+		for (int j = 0; j < cur->getWeights().size(); j++)
 		{
-			float act = cur->getWeights()[i] * input[i];
-
-			out.push_back(MathHelper::sigmoid(act));
+			act += cur->getWeights()[j] * input[j];
 		}
+		out.push_back(MathHelper::sigmoid(act));
 	}
 	return out;
 }
