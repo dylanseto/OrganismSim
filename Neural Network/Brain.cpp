@@ -33,9 +33,15 @@ Brain::Brain()
 	//Output Layer
 
 	Neuron* leftWheel = new Neuron();
+	Neuron* rightWheel = new Neuron();
 }
 
 vector<float> Brain::update(vector<float> input)
 {
+	//input layer is not used for now, we don't want signoid to be used.
+
+	vector<float> hiddenOut = hiddenLayer->update(input);
+	vector<float> out = outputLayer->update(input);
+
 	return vector<float>();
 }
