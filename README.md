@@ -1,7 +1,8 @@
 # OrganismSim
 Implements an organism evolution simulation using a MLP neural network in C++
 
-#Neural Network
+Neural Network
+
 The current Neural Network of the agents is implemented as follows, this is subject to change:
 
 1) Inputs:
