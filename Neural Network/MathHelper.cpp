@@ -11,5 +11,6 @@ float MathHelper::RandomNumberClamped()
 
 float MathHelper::sigmoid(float num)
 {
-	return tanh(num);
+	//tanh(num);
+	return (1 / pow(exp(1.0), -1 * (num))); 
 }

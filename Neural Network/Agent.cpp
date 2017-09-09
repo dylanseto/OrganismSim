@@ -12,10 +12,10 @@ void Agent::tick()
 {
 	//Brain Calculation
 	vector<float> input;
-	input.push_back(0.3);
 	input.push_back(1);
 	input.push_back(1);
-	input.push_back(-1);
+	input.push_back(1);
+	input.push_back(1);
 
 	vector<float> out = AgentBrain->update(input);
 
