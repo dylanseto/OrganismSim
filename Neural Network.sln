@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neural Network", "Neural Network\Neural Network.vcxproj", "{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neural Network", "Neural Network\Neural Network.vcxproj", "{F236B316-B21E-489D-82E4-931247224D1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,16 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Debug|x64.ActiveCfg = Debug|x64
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Debug|x64.Build.0 = Debug|x64
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Debug|x86.ActiveCfg = Debug|Win32
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Debug|x86.Build.0 = Debug|Win32
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Release|x64.ActiveCfg = Release|x64
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Release|x64.Build.0 = Release|x64
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Release|x86.ActiveCfg = Release|Win32
-		{EA1F2512-C7DE-42FD-BB90-CC49DBFF6CFD}.Release|x86.Build.0 = Release|Win32
+		{F236B316-B21E-489D-82E4-931247224D1E}.Debug|x64.ActiveCfg = Debug|x64
+		{F236B316-B21E-489D-82E4-931247224D1E}.Debug|x64.Build.0 = Debug|x64
+		{F236B316-B21E-489D-82E4-931247224D1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F236B316-B21E-489D-82E4-931247224D1E}.Debug|x86.Build.0 = Debug|Win32
+		{F236B316-B21E-489D-82E4-931247224D1E}.Release|x64.ActiveCfg = Release|x64
+		{F236B316-B21E-489D-82E4-931247224D1E}.Release|x64.Build.0 = Release|x64
+		{F236B316-B21E-489D-82E4-931247224D1E}.Release|x86.ActiveCfg = Release|Win32
+		{F236B316-B21E-489D-82E4-931247224D1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CB27311F-6CC2-425F-AC1D-F80AACC34B38}
 	EndGlobalSection
 EndGlobal
