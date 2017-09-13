@@ -7,11 +7,10 @@ Agent::Agent(Position& pos)
 	this->AgentBrain = new Brain(); // Create Randomly Generated Brain
 	this->fullness = 100;
 
-	//Make Random
 	this->pos = Position(pos.x, pos.y);
 }
 
-Agent::Agent() : Agent(Position(5, 5))
+Agent::Agent() : Agent(Position(0, 0))
 {
 }
 
@@ -35,7 +34,7 @@ void Agent::tick(sf::RenderWindow * window)
 
 	//Draw result with SFML
 	sf::CircleShape circle;
-	circle.setRadius(25);
+	circle.setRadius(AGENT_RADIUS);
 	//circle.setOutlineColor(sf::Color::Red);
 	circle.setFillColor(sf::Color::Red);
 	//circle.setOutlineThickness(5);

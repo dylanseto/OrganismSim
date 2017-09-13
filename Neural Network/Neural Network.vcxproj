@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Brain.h" />
+    <ClInclude Include="Food.h" />
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="NetLayer.h" />
     <ClInclude Include="Neuron.h" />

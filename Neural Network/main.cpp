@@ -15,8 +15,8 @@ int main()
 
 	//test->tick();*/
 
-	World* world = new World();
-	world->init();
+	//World* world = new World();
+	World::getInstance()->init();
 
-	system("pause");
+	//system("pause");
 }
