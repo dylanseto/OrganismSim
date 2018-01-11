@@ -2,13 +2,20 @@
 #include <iostream>
 using namespace std;
 
-Agent::Agent()
+Agent::Agent(Position& pos)
 {
 	this->AgentBrain = new Brain(); // Create Randomly Generated Brain
 	this->fullness = 100;
+
+	//Make Random
+	this->pos = Position(pos.x, pos.y);
 }
 
-void Agent::tick()
+Agent::Agent() : Agent(Position(5, 5))
+{
+}
+
+void Agent::tick(sf::RenderWindow * window)
 {
 	//Brain Calculation
 	vector<float> input;
@@ -19,10 +26,20 @@ void Agent::tick()
 
 	vector<float> out = AgentBrain->update(input);
 
-	for (int i = 0; i != out.size(); i++)
+	/*for (int i = 0; i != out.size(); i++)
 	{
 		cout << out[i] << endl;
-	}
+	}*/
 
-	//draw result with SFML
+	//Update Position Based on input
+
+	//Draw result with SFML
+	sf::CircleShape circle;
+	circle.setRadius(25);
+	//circle.setOutlineColor(sf::Color::Red);
+	circle.setFillColor(sf::Color::Red);
+	//circle.setOutlineThickness(5);
+	circle.setPosition(pos.x, pos.y);
+
+	window->draw(circle);
 }
