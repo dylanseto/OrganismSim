@@ -80,3 +80,11 @@ void World::removeAgent(Agent* agent)
 	}
 	cout << "done" << endl;
 }
+
+World* World::instance;
+World * World::getInstance()
+{
+	if (instance == nullptr) instance = new World();
+
+	return instance;
+}

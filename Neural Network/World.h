@@ -12,6 +12,8 @@ public:
 	void init();
 	
 	void removeAgent(Agent* agent);
+
+	static World* getInstance();
 private:
 	vector<Agent*> agents;
 	sf::RenderWindow* window;
@@ -20,4 +22,6 @@ private:
 
 	int numAgents;
 	int test;
+
+	static World* instance;
 };

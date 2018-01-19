@@ -26,7 +26,7 @@ bool MathHelper::agentIntersection(Position pos1, Position pos2)
 	{
 		return true;
 	}*/
-	if (sqrt(pow(pos1.x - pos2.x, 2) + pow(pos1.y - pos2.y, 2)) < Agent::AGENT_RADIUS)
+	if (sqrt(pow(pos1.x - pos2.x, 2) + pow(pos1.y - pos2.y, 2)) < 25)
 	{
 		return true;
 	}

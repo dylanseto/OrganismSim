@@ -60,7 +60,7 @@ void Agent::tick(sf::RenderWindow * window)
 
 	//Draw result with SFML
 	sf::CircleShape circle;
-	circle.setRadius(AGENT_RADIUS);
+	circle.setRadius(25);
 	//circle.setOutlineColor(sf::Color::Red);
 	circle.setFillColor(sf::Color::Red);
 	//circle.setOutlineThickness(5);
