@@ -31,6 +31,8 @@ vector<float> NetLayer::update(vector<float> input)
 		for (int j = 0; j < cur->getWeights().size(); j++)
 		{
 			act += cur->getWeights()[j] * input[j];
+			//cout << "weight: " << cur->getWeights()[j] << endl;
+			cur->setWeightByIndex(j, MathHelper::RandomNumberClamped()); //TEMP: Change Weight randomly.
 		}
 		out.push_back(MathHelper::sigmoid(act));
 	}

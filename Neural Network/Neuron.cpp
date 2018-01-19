@@ -20,3 +20,8 @@ Neuron::Neuron(float inputNum, vector<float> inputWeights)
 	this->inputNum = inputNum;
 	this->inputWeights = inputWeights;
 }
+
+void Neuron::setWeightByIndex(int i, float v)
+{
+	this->inputWeights[i] = v;
+}

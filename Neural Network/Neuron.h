@@ -13,6 +13,7 @@ public:
 	vector<float> getWeights() {
 		return inputWeights;
 	}
+	void setWeightByIndex(int i, float v);
 
 private:
 	vector<float> inputWeights; //weights
