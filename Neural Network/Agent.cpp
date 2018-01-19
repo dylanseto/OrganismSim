@@ -47,6 +47,9 @@ void Agent::tick(sf::RenderWindow * window)
 	float w_r = out[0];
 	float w_l = out[1];
 	
+	//(1,1) right wheel
+	//(1,-1) left wheel
+	//^ Rotate these
 	float w_r_x = -1 * w_r;
 	float w_r_y = 1 * w_r;
 	float w_l_x = 1 * w_l;
@@ -66,5 +69,15 @@ void Agent::tick(sf::RenderWindow * window)
 	//circle.setOutlineThickness(5);
 	circle.setPosition(pos.x, pos.y);
 
+	sf::RectangleShape rec;
+	rec.setSize(sf::Vector2f(2, 50));
+	rec.setFillColor(sf::Color::Black);
+	rec.setPosition(pos.x+25, pos.y-25);
+	//rec.setRotation(0);
+
+	sf::Transform transform;
+	transform.rotate(180, sf::Vector2f(pos.x, pos.y));//sf::Vector2f(pos.x + 25, pos.y - 25));
+
 	window->draw(circle);
+	window->draw(rec, transform);
 }
