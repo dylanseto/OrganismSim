@@ -44,14 +44,20 @@ void Agent::tick(sf::RenderWindow * window)
 
 		sDeltaTime = 0;
 	}
-	//Update Position Based on input
-	float vx = out[0] - 0.5;
-	float vy = out[1] - 0.5;
-	pos.x = pos.x + 2 * vx;
-	pos.y = pos.y + 2 * vy;
+	//Update Position Based on output
+	float w_r = out[0];
+	float w_l = out[1];
+	
+	float w_r_x = -1 * w_r;
+	float w_r_y = 1 * w_r;
+	float w_l_x = 1 * w_l;
+	float w_l_y = -1 * w_l;
 
-	/*cout << "vx: " << vx << endl;
-	cout << "vy: " << vy << endl;*/
+	pos.x = pos.x + w_r_x + w_l_x;
+	pos.y = pos.y + w_r_y + w_l_y;
+
+	cout << "vx: " << pos.x << endl;
+	cout << "vy: " << pos.y << endl;
 
 	//Draw result with SFML
 	sf::CircleShape circle;
