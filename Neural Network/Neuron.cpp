@@ -17,6 +17,10 @@ Neuron::Neuron(float inputNum)
 
 Neuron::Neuron(float inputNum, vector<float> inputWeights)
 {
+	if (inputWeights.size() != inputNum)
+	{
+		throw "Unmatched Input Numbers in Neurons";
+	}
 	this->inputNum = inputNum;
 	this->inputWeights = inputWeights;
 }
