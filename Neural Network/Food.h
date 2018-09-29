@@ -1,13 +1,12 @@
 #pragma once
 
-#include "Position.h"
-#include <SFML\Graphics.hpp>
+#include "DrawnObject.h"
 
-class Food
+class Food : DrawnObject
 {
 public:
 	Food();
 	Food(Position &pos);
-private:
-	Position pos;
+
+	void tick(sf::RenderWindow* window);
 };

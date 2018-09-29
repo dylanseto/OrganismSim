@@ -9,3 +9,7 @@ Food::Food(Position &pos)
 {
 	this->pos = pos;
 }
+
+void Food::tick(sf::RenderWindow * window)
+{
+}
