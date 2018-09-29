@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Agent.h"
+#include "Food.h"
 
 #include <vector>
 #include <SFML/Graphics.hpp>
@@ -22,6 +23,8 @@ private:
 
 	int numAgents;
 	int test;
+
+	vector<Food*> foods;
 
 	static World* instance;
 };

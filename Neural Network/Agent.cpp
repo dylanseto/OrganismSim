@@ -58,8 +58,8 @@ void Agent::tick(sf::RenderWindow * window)
 	pos.x = pos.x + w_r_x + w_l_x;
 	pos.y = pos.y + w_r_y + w_l_y;
 
-	cout << "vx: " << pos.x << endl;
-	cout << "vy: " << pos.y << endl;
+	//cout << "vx: " << pos.x << endl;
+	//cout << "vy: " << pos.y << endl;
 
 	//Draw result with SFML
 	sf::CircleShape circle;

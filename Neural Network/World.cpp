@@ -57,17 +57,14 @@ void World::tick()
 
 void World::removeAgent(Agent* agent)
 {
-	cout << "but" << endl;
 	for(int i = 0; i != agents.size(); i++)
 	{
 		if (agents[i] == agent)
 		{
 			agents.erase(agents.begin() + i);
-			cout << "done" << endl;
 			return;
 		}
 	}
-	cout << "done" << endl;
 }
 
 World* World::instance;
